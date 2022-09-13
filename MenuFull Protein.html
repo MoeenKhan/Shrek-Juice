@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SJ - Menu</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Animations -->
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<!--Nav js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+<header>
+    <div class="container clearfix">
+        <div id="logo">
+            <img src="img/Logo copy1.png"/>
+        </div>
+       <nav>
+            <a href="index.html" class="nav">Home</a>
+            
+            <a href="About.html" class="nav">About</a>
+            <a href="Menu.html" id="active" class="nav">Menu</a>
+            <a href="Catering.html" class="nav">Catering</a>
+            <a href="Franchising.html" class="nav">Franchising</a>
+            <div class="dropdown">
+            <span><a href="Contact.html" class="nav">Contact</a></span>
+            <div class="dropdown-content">
+              <a href="StoreLocation.html">Store Location</a>
+              <a href="Feedback.html">Feedback</a>
+          	</div>
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+<div class="Mbg">
+<div class="Mcontainer">
+<div class="controls">
+  <label>Categories:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".category-1">Fruit Juices</button>
+  <button class="filter" data-filter=".category-2">Vegetable Juices</button>
+  <button class="filter" data-filter=".category-3">Smoothies</button>
+  <button class="filter" data-filter=".category-4">Protein Shakes</button>
+  <button class="filter" data-filter=".category-5">Winter Menu</button>
+  <button class="filter" data-filter=".category-6">Chocolate Juices</button>
+  <button class="filter" data-filter=".category-7">Mock Tails</button>
+  <button class="filter" data-filter=".category-8">Specials</button>
+</div>
+  <div id="MixContainer" class="Mixcontainer">
+  <div class="mix category-1" data-myorder="1"><a href="#openModal1"><img src="img/Orangejuice.jpg" style="width:170px; margin-left:120px;"/></a></div>
+  <div class="mix category-1" data-myorder="2"><a href="#openModal2"><img src="img/560318-green-monster-juice-for-anti-aging.jpg" style="width:350px;"/></a></div>
+  <div class="mix category-1" data-myorder="3"><a href="#openModal3"><img src="img/pineapple-juice-in-a-glass.jpg" style="width:190px; margin-left:80px;"/></a></div>
+  <div class="mix category-2" data-myorder="4"><a href="#openModal4"><img src="img/tomato-juice-drink.jpg" style="width:350px;"/></a></div>
+  <div class="mix category-2" data-myorder="5"><a href="#openModal5"><img src="img/cucumber cooler hr-1.jpg" style="width:230px; margin-top:-50px; margin-left:50px;"/></a></div>
+  <div class="mix category-2" data-myorder="6"><a href="#openModal6"><img src="img/carrot juice.jpg" style="width:230px; margin-left:70px;"/></a></div>
+  <div class="mix category-3" data-myorder="7"><a href="#openModal7"><img src="img/strawberry-smoothie.jpg" style="margin-top:-10px; margin-left:120px; width:47%; background:#FFF;"/></a></div>
+  <div class="mix category-3" data-myorder="8"><a href="#openModal8"><img src="img/blueberrybanana.jpg" style="width:100%; margin:-50px 0px 0px 0px;"/></a></div>
+  <div class="mix category-3 mix category-8" data-myorder="6"><a href="#openModal9"><img src="img/mango-coconut-smoothie.jpg" style="width:65%;margin-top:-100px; margin-left:50px;"/></a></div>
+  <div class="mix category-4" data-myorder="7"><a href="#openModal10"><img src="img/peperment shake.jpg" style="width:35%; margin-top:-40px; margin-left:140px;"/></a></div>
+  <div class="mix category-4" data-myorder="8"><a href="#openModal11"><img src="img/whey protein shake.jpg" style="width:50%; margin-top:-40px; margin-left:110px;"/></a></div>
+  <div class="mix category-4" data-myorder="6"><a href="#openModal12"><img src="img/Green shake.jpg" style="width:38%; margin-top:-0px; margin-left:110px;"/></a></div>
+  <div class="mix category-5 mix category-8" data-myorder="7"><a href="#openModal13"><img src="img/blender eggnog.jpg" style="width:60%; margin-left:100px;"/></a></div>
+  <div class="mix category-5" data-myorder="8"><a href="#openModal14"><img src="img/Christmas.jpg" style="width:80%; margin-top:-30px; margin-left:40px;"/></a></div>
+  <div class="mix category-5" data-myorder="6"><a href="#openModal15"><img src="img/11_1616982291_l.jpg" style="width:75%; margin-top:40px; margin-left:40px;"/></a></div>
+  <div class="mix category-6" data-myorder="7"><a href="#openModal16"><img src="img/strawberry chocolate shake.jpg" style="width:50%; margin-top:-50px; margin-left:100px;"/></a></div>
+  <div class="mix category-6" data-myorder="8"><a href="#openModal17"><img src="img/banana.jpg" style="width:80%; margin-top:-55px; margin-left:60px;"/></a></div>
+  <div class="mix category-6" data-myorder="6"><a href="#openModal18"><img src="img/almond shake.jpg" style="width:70%; margin-top:-150px; margin-left:10px;"/></a></div>
+  <div class="mix category-7 mix category-8" data-myorder="7"><a href="#openModal19"><img src="img/pinacolada-kokteil.jpg" style="width:60%; margin-left:80px;"/></a></div>
+  <div class="mix category-7" data-myorder="8"><a href="#openModal20"><img src="img/unfuzzynavel.jpeg" style="width:40%; margin-left:130px;"/></a></div>
+  <div class="mix category-7" data-myorder="6"><a href="#openModal21"><img src="img/Vinson-Massif.jpg" style="width:50%; margin-top:0px; margin-left:100px;"/></a></div>
+
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+</div>
+</div>
+
+<div id="openModal1" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/Orangejuice.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Orange Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal2" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/560318-green-monster-juice-for-anti-aging.jpg" width="850" style="margin-top:0px; margin-left:-200px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Apple Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal3" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/pineapple-juice-in-a-glass.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Pineapple Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal4" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/tomato-juice-drink.jpg" width="750" style="margin-top:30px; margin-left:-160px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Tomato Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal5" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/cucumber cooler hr-1.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Cucumber Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal6" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/carrot juice.jpg" width="450" style="margin-top:50px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Carrot Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal7" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/strawberry-smoothie.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Strawberry Smoothie</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Smoothies</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal8" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/blueberrybanana.jpg" width="850" style="margin-top:-50px; margin-left:-170px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Orange Juice</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Fruit Juices</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal9" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/mango-coconut-smoothie.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Mango Coconut Smoothie</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Smoothie</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal10" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/peperment shake.jpg" width="300" style="margin-left:100px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p>
+<span style="color:#7CC043">PRODUCT:</span> Pepermint Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Protein Shakes</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal11" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/whey protein shake.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Whey Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Protein Shakes</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal12" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/Green shake.jpg" width="410" style="margin-top:-50px; margin-left:40px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Green Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Protein Shakes</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal13" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/blender eggnog.jpg" width="600" style="margin-top:0px; margin-left:-70px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Winter EggNog</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Winter Menu</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal14" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/Christmas.jpg" width="650" style="margin-top:0px; margin-left:-90px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Winter Tanquery</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Winter Menu</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal15" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/11_1616982291_l.jpg" width="650" style="margin-top:100px; margin-left:-90px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Cousin Drink</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Winter Menu</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal16" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/strawberry chocolate shake.jpg" width="450" style="margin-top:-70px; margin-left:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Strawberry Chocolate Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Chocolate Shake</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal17" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/banana.jpg" width="650" style="margin-top:-50px; margin-left:-100px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Caramel Chocolate Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Chocolate Shake</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal18" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/almond shake.jpg" width="450" style="margin-top:-70px; margin-left:-50px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Almond Choco Shake</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Chocolate Shake</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal19" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/pinacolada-kokteil.jpg" width="500" style="margin-top:30px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Pinacolada</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Mocktails</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal20" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/unfuzzynavel.jpeg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Unfuzzy Navel</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Mocktails</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal21" class="MenuDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<div class="Mimg"><img src="img/Vinson-Massif.jpg" width="450" style="margin-top:0px;"/></div><div class="detail"><p style="line-height:20px;">Sherk juice provides the best and healthy juices, the products are made only from nature.</p><p><span style="color:#7CC043">PRODUCT:</span> Vinson Massif</p>
+<p><span style="color:#7CC043">PRICE:</span> 25$</p>
+<p><span style="color:#7CC043">CATEGORY:</span> Mocktails</p>
+<p><span style="color:#7CC043">QUANTITY:</span> 500ml</p></div>
+	</div>	
+</div>
+
+<div id="openModal" class="EmailDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<p>Enter your Email<p><input type="text" id="einput" style="width:250px; border-radius:0px;"/>
+        <input type="button" id="esubmit" value="SUBMIT" style="border-radius:0px;" onClick="email()"/><p id="epara"></p>
+	</div>	
+</div>
+
+<footer>
+<section class="footer">
+<img src="img/footerorange.png" id="ftorange"/>
+<div class="footer1">
+<h3>sign up for our<br>email updates</h3>
+<p>Stay up to date with our tips, new products and offers.</p>
+<div class="ftbutton"><a href="#openModal" style="background:#0FF;"><p class="ftbp">Email Address <span>&#10095;</span></p></a></div>
+</div>
+<div class="footer1"><h3>stay connected with shrek juice</h3><img src="img/listrak copy.png" usemap="#smedia"/>
+<map name="smedia">
+  <area alt="" title="tumblr" href="Social/tumblr.html" shape="poly" coords="41,14,42,33,24,46,3,36,2,14,21,4" />
+  <area alt="" title="twitter" href="Social/twitter.html" shape="poly" coords="71,1,51,13,51,35,72,47,91,36,91,13" />
+    <area alt="" title="google+" href="Social/google.html" shape="poly" coords="121,2,101,12,102,35,120,45,140,34,140,11" />
+    <area alt="" title="linkedin" href="Social/linkedin.html" shape="poly" coords="151,14,152,37,173,49,190,36,189,14,171,4" />
+    <area alt="" title="facebook" href="Social/fb.html" shape="poly" coords="47,44,28,54,28,75,47,88,66,75,66,54" />
+    <area alt="" title="youtube" href="Social/yt.html" shape="poly" coords="95,44,77,57,77,79,97,88,116,77,116,54" />
+    <area alt="" title="feed" href="Social/feed.html" shape="poly" coords="146,44,127,56,126,78,146,88,165,75,165,54" />
+</map>
+</div>
+<div class="footer1">
+<h3>menu</h3>
+<ul>
+<li>&nbsp;&nbsp;<a href="MenuFull Fruits.html">Fruit juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Vegetables.html">Vegetable Juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Smoothies.html">Smoothies</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Protein.html">Protein Shakes</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Chocolate.html">Chocolate Juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Mocktails.html">Mock Tails</a></li>
+</ul></div>
+<div class="footer1">
+<h3>links</h3>
+<ul>
+<li>&nbsp;&nbsp;<a href="Index.html">Home Page</a></li>
+<li>&nbsp;&nbsp;<a href="Catering.html">Catering Service</a></li>
+<li>&nbsp;&nbsp;<a href="Contact.html">Contact us</a></li>
+<li>&nbsp;&nbsp;<a href="Franchising.html">Franchise</a></li>
+<li>&nbsp;&nbsp;<a href="About.html">About us</a></li>
+<li>&nbsp;&nbsp;<a href="Feedback.html">FeedBack</a></li>
+</ul>
+</div>
+</section>
+<script>
+function email()
+{
+var e = document.getElementById("einput").value;
+if(e == null || e == "")
+{
+	alert("Please Enter Your Email")
+	}
+else
+{
+	document.getElementById("epara").innerHTML = "Your Email has been submitted"
+}}
+</script>
+</footer>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script>
+$(function(){
+  $('#MixContainer').mixItUp(
+  {
+    load: {
+      filter: '.category-4'
+    }
+  });
+});
+</script>
+<script>
+// $fn.scrollSpeed(step, speed, easing);
+2
+jQuery.scrollSpeed(100, 800);</script>
+		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="main.js"></script>
+</body>
+</html>

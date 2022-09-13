@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SJ - Catering</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Animations -->
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<!--Nav js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+<body>
+<header>
+    <div class="container clearfix">
+        <div id="logo">
+            <img src="img/Logo copy1.png"/>
+        </div>
+       <nav>
+            <a href="index.html" class="nav">Home</a>
+            
+            <a href="About.html" class="nav">About</a>
+            <a href="Menu.html" class="nav">Menu</a>
+            <a href="Catering.html" id="active" class="nav">Catering</a>
+            <a href="Franchising.html" class="nav">Franchising</a>
+            <div class="dropdown">
+            <span><a href="Contact.html" class="nav">Contact</a></span>
+            <div class="dropdown-content">
+              <a href="StoreLocation.html">Store Location</a>
+              <a href="Feedback.html">Feedback</a>
+          	</div>
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+<div class="catering">
+<img src="img/cateringimg.jpg" width="1100" height="500"/>
+<i><b><h1 style="margin-top:30px;">CATER WITH SHREK JUICE</h1></b><br>
+<p>WE'RE TAKING THE FEEL GOOD ON THE ROAD. AND NO MATTER WHAT KIND OF EVENT YOU’RE HOSTING, YOU’LL WANT TO MAKE SURE JAMBA JUICE IS THERE.<br>BUSINESS MEETIing? CORPORATE GETAWAY? CLIENT PRESENTATION? EMPLOYEE OF THE CENTURY? CHECK. CHECK. CHECK. AND WOW, IMPRESSIVE, CHECK.</p><br>
+<p>Delicious smoothies. Yummy baked goods. Scrumptious snacks. All with 0g trans-fats, no artificial flavors or preservatives and no high fructose corn syrup.</br>
+ And hey, all you have to do is pick up the phone, download the catering menu and share your order - we deliver, or drop in and pick it up. What could be easier?</p></i></br></br><br>
+<div class="cater">
+<div class="catmenu">
+<img src="img/i.jpg" width="500"/><h2><b><i>
+SHREK JUICE MENU</b></h2>Please have a look at our Shrek Juice Menu,<br>
+click here to check out the Menu</i>
+<div class="button">
+ <center><a href="MenuFull.html">VIEW OUR MENU</a></center>
+</div>
+</div>
+<div class="catmenu">
+<img src="img/i.jpg" width="500"/><h2><b><i>
+SHREK JUICE CONTACT</i></b></h2><i>For more information or to place your order:<br> 
+Contact your local Jamba Juice or 
+click on this contact</i>
+<div class="button">
+ <center><a href="Contact.html">CONTACT US</a></center>
+</div>
+</div>
+
+
+</div>
+</div>
+<div id="openModal" class="EmailDialog">
+<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<p>Enter your Email<p><input type="text" id="einput" style="width:250px; border-radius:0px;"/>
+        <input type="button" id="esubmit" value="SUBMIT" style="border-radius:0px;" onClick="email()"/><p id="epara"></p>
+	</div>	
+</div>
+
+<footer>
+<section class="footer">
+<img src="img/footerorange.png" id="ftorange"/>
+<div class="footer1">
+<h3>sign up for our<br>email updates</h3>
+<p>Stay up to date with our tips, new products and offers.</p>
+<div class="ftbutton"><a href="#openModal" style="background:#0FF;"><p class="ftbp">Email Address <span>&#10095;</span></p></a></div>
+</div>
+<div class="footer1"><h3>stay connected with shrek juice</h3><img src="img/listrak copy.png" usemap="#smedia"/>
+<map name="smedia">
+  <area alt="" title="tumblr" href="Social/tumblr.html" shape="poly" coords="41,14,42,33,24,46,3,36,2,14,21,4" />
+  <area alt="" title="twitter" href="Social/twitter.html" shape="poly" coords="71,1,51,13,51,35,72,47,91,36,91,13" />
+    <area alt="" title="google+" href="Social/google.html" shape="poly" coords="121,2,101,12,102,35,120,45,140,34,140,11" />
+    <area alt="" title="linkedin" href="Social/linkedin.html" shape="poly" coords="151,14,152,37,173,49,190,36,189,14,171,4" />
+    <area alt="" title="facebook" href="Social/fb.html" shape="poly" coords="47,44,28,54,28,75,47,88,66,75,66,54" />
+    <area alt="" title="youtube" href="Social/yt.html" shape="poly" coords="95,44,77,57,77,79,97,88,116,77,116,54" />
+    <area alt="" title="feed" href="Social/feed.html" shape="poly" coords="146,44,127,56,126,78,146,88,165,75,165,54" />
+</map>
+</div>
+<div class="footer1">
+<h3>menu</h3>
+<ul>
+<li>&nbsp;&nbsp;<a href="MenuFull Fruits.html">Fruit juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Vegetables.html">Vegetable Juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Smoothies.html">Smoothies</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Protein.html">Protein Shakes</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Chocolate.html">Chocolate Juices</a></li>
+<li>&nbsp;&nbsp;<a href="MenuFull Mocktails.html">Mock Tails</a></li>
+</ul></div>
+<div class="footer1">
+<h3>links</h3>
+<ul>
+<li>&nbsp;&nbsp;<a href="Index.html">Home Page</a></li>
+<li>&nbsp;&nbsp;<a href="Catering.html">Catering Service</a></li>
+<li>&nbsp;&nbsp;<a href="Contact.html">Contact us</a></li>
+<li>&nbsp;&nbsp;<a href="Franchising.html">Franchise</a></li>
+<li>&nbsp;&nbsp;<a href="About.html">About us</a></li>
+<li>&nbsp;&nbsp;<a href="Feedback.html">FeedBack</a></li>
+</ul>
+</div>
+</section>
+<script>
+function email()
+{
+var e = document.getElementById("einput").value;
+if(e == null || e == "")
+{
+	alert("Please Enter Your Email")
+	}
+else
+{
+	document.getElementById("epara").innerHTML = "Your Email has been submitted"
+}}
+</script>
+</footer>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script>
+// $fn.scrollSpeed(step, speed, easing);
+2
+jQuery.scrollSpeed(100, 800);</script>
+</body>
+</html>
